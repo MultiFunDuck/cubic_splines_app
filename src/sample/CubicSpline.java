@@ -69,7 +69,7 @@ public class CubicSpline {
     }
 
     public double A_calc_from_BCDS(double B, double C, double D, double S, double dif){
-        double l = 0.5;
+        double l = 0.0;
         return (S/(Math.pow(dif,3)) - B*(1+6*l)/(Math.pow(dif,1)) - C/(Math.pow(dif,2)) - D/(Math.pow(dif,3)))/(1+12*l);
     }
 
